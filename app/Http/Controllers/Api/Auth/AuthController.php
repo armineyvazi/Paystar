@@ -28,9 +28,10 @@ class AuthController extends Controller
         $request->validated($request->all());
 
         $user = User::create(array(
-            'name'      => $request->name,
-            'email'     => $request->email,
-            'password'  => Hash::make($request->password)
+            'name'       => $request->name,
+            'email'      => $request->email,
+            'card_number'=> $request->card_number,
+            'password'   => Hash::make($request->password)
         ));
         return response()->json([
             'token' => $user->createToken('API TOKEN of ' . $user->name)->plainTextToken,
