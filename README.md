@@ -44,5 +44,6 @@ with: sudo lsof -t -i:8000
 9-php artisan migrate --seed 
 
 user:paystar@gmail.com
+
 password:password.
 
