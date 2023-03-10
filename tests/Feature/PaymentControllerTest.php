@@ -15,6 +15,8 @@ class PaymentControllerTest extends TestCase
 {
     use RefreshDatabase;
 
+    protected $user;
+
     public function setUp(): void
     {
         parent::setUp();
@@ -99,7 +101,6 @@ class PaymentControllerTest extends TestCase
             'product' => $product->id,
             'name' => $this->user->name,
         ]);
-        $invoice = Invoice::first();
         $order = Order::first();
         /**
          * create fake data
