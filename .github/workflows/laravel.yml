@@ -32,4 +32,7 @@ jobs:
       env:
         DB_CONNECTION: mysql
         DB_DATABASE: database/database.mysql
-      run: php artisan test
+      run: |
+        php artiasn migrate
+        php artisan migrate:fresh
+        php artisan test
