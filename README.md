@@ -16,6 +16,8 @@ send email to user "if you forget pay invoice please back and pay it ,we keep yo
 
 To run this laravel App please run:
 
+php artisan key:gen
+
 1-copy .env.example => .env 
 
 2-write your database connection
@@ -48,3 +50,5 @@ user:paystar@gmail.com
 
 password:password.
 
+
+Documnet:https://docs.paystar.ir/docs/tutorial-basics/IPG/
