@@ -24,6 +24,7 @@ To run this laravel App please run:
 
 4-php artisan migrate
 
+5-npm install 
 5-npm run dev
 
 6-please just run at port:8000 
